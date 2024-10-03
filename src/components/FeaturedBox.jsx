@@ -6,7 +6,7 @@ const FeaturedBox = () => {
     <section className="featured-box" id="home">
       <div className="featured-text">
         <div className="featured-text-card">
-          <span>Boonruksa Winanon</span>
+          <span>Wanchai Chiangfung</span>
         </div>
         <div className="featured-name">
           I'm <span className="typedText"></span>
