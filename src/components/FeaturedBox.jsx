@@ -13,7 +13,7 @@ const FeaturedBox = () => {
         </div>
         <div className="featured-text-info">
           <p>
-            Hello! My name is Wanchai Chiangfung , and I am a software
+            Hello! My name is Wanchai Chiangfung  , and I am a software
             Engineering. I am passionate about Javascript and have experience in
             mySQL and UX/UI . I enjoy collaborating with others and am always
             eager to learn and grow.
@@ -26,11 +26,9 @@ const FeaturedBox = () => {
         </div>
         <div className="social_icons">
           <div className="icon">
-            <a
-              href="https://www.instagram.com/wxnchxi._?igsh=MWw2bnV4dWZtZnM2Nw==
+            <a href="https://www.instagram.com/wxnchxi._?igsh=MWw2bnV4dWZtZnM2Nw==
 
-"
-            >
+">
               <i className="uil uil-instagram-alt"></i>
             </a>
           </div>

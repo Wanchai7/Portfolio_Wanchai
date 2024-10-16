@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="top-footer">
-        \<p>Wanchai Chiangfung</p>
+        <p>Wanchai Chiangfung</p>
       </div>
       <div className="middle-footer">
         <ul className="footer-menu">

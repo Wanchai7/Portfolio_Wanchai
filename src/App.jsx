@@ -11,13 +11,13 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    /** Change Active Link */
+    /** Scroll Reveal */
     const sections = document.querySelectorAll("section[id]");
 
-    function scrollActive() {
+    const scrollActive = () => {
       const scrollY = window.scrollY;
       sections.forEach((current) => {
-        const sectionHeight = current.offsetHeight,
+        const sectionHeight = current.offsetHight,
           sectionTop = current.offsetTop - 50,
           sectionId = current.getAttribute("id");
 
@@ -31,7 +31,7 @@ function App() {
             .classList.remove("active-link");
         }
       });
-    }
+    };
     const sr = ScrollReveal({
       origin: "top",
       distance: "80px",
@@ -40,9 +40,41 @@ function App() {
     });
 
     //Home
-    sr.reveal(".feature-text-card", {});
-    sr.reveal(".feature-name", { delay: 100 });
-    sr.reveal(".feature-text-info", { delay: 200 });
+    sr.reveal(".featrue-text-card", {});
+    sr.reveal(".featrue-name", { delay: 100 });
+    sr.reveal(".featrue-text-card", { delay: 200 });
+    sr.reveal(".featured-text-info", { delay: 200 });
+    sr.reveal(".featured-text-btn", { delay: 200 });
+    sr.reveal(".social_icons", { delay: 200 });
+    sr.reveal(".featured-image", { delay: 200 });
+    sr.reveal(".social_icons", { delay: 200 });
+
+    //Project Box
+    sr.reveal(".project-box", { interval: 200 });
+
+    //Heading
+    sr.reveal(".top-header", {});
+
+    //Left-right Animation
+    const srLeft = ScrollReveal({
+      origin: "left",
+      distance: "80px",
+      duration: 2000,
+      reset: true,
+    });
+
+    srLeft.reveal(".about-info", { delay: 200 });
+    srLeft.reveal(".contact-info", { delay: 200 });
+    sr.reveal(".col", { delay: 200 });
+
+    const srRight = ScrollReveal({
+      origin: "Right",
+      distance: "80px",
+      duration: 2000,
+      reset: true,
+    });
+    srLeft.reveal(".skill-box", { delay: 200 });
+    srLeft.reveal(".form-control", { delay: 200 });
 
     window.addEventListener("scroll", scrollActive);
     /** Type Effect */
@@ -75,4 +107,3 @@ function App() {
 }
 
 export default App;
-//555
